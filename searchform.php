@@ -1,0 +1,1 @@
+<form id="searchform" method="get" action="<?php bloginfo('home'); ?>/"> <input type="text" value="digita, poi premi invio" onfocus="if (this.value == 'digita, poi premi invio') {this.value = '';}" onblur="if (this.value == '') {this.value = 'digita, poi premi invio';}" size="18" maxlength="50" name="s" id="s" /> </form> 

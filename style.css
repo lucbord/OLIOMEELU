@@ -1,0 +1,132 @@
+/*
+Theme Name: OLIO MEELU
+Theme URI: http://www.freementi.it
+Description: tema wordpress basato su bootstrap 3.0
+Author: FREEmenti
+Author URI: http://www.freementi.it
+version: 1.0
+Tags: Bootstrap
+*/
+	
+	@import url("css/normalize.css");
+	@import url("css/bootstrap.css");
+	@import url("css/mpopup.css");
+
+	/* 1. STRUTTURA */
+
+	body		{ background-color: #eee;}
+	.container	{ margin:20px auto; padding: 0px; }
+	#page 		{ background-color: #fff;  box-shadow: 0px 1px 3px #ACACAC;  }
+	#header   	{ position: relative; padding: 40px 20px; background-color: #006633; border-bottom: 5px solid #cc3300; height: auto; }
+
+	.logo 		{ display: block; } 
+	.logo a 	{ text-indent:-9999px; display: block; background-image: url(img/logo.gif); background-size:100% auto; width: 228px; height: 102px; }
+	.logo img 	{ max-width: 100%; height: auto !important; }
+
+	footer 		{ padding-top: 20px; background-color: #E2E2E2; border-top: 3px solid #cc3300;}
+
+	/* 2. TIPOGRAFIA */
+
+	body							{  font-family: 'Merriweather', serif; font-weight: 400; font-size: 16px;  line-height: 28px; }
+	h1, h2, h3, h4, h5, h6, nav 	{  font-family: 'Playfair Display', serif; color: #cc3300; }
+
+
+	.entry p 						{ text-shadow:1px 1px 0px #fff;}
+
+	.wcmenucart-display-right  	{ letter-spacing: 3px; font-size: 18px;   }
+
+	a  				{color: #cc3300; text-decoration: none; }
+
+	.widgetSidebar h2 		{ font-size: 22px; text-transform: uppercase; margin-bottom: 20px;}
+
+	footer 			{ font-size: 12px !important; color: #0A0C19; line-height: 20px;  }
+	footer h2 		{ font-size: 16px !important; text-transform: uppercase;  }
+
+	/* 2. NAVIGAZIONE */
+
+	.navbar .nav, .navbar .nav > li 	{ float:none; display:inline-block; *display:inline; /* ie7 fix */ *zoom:1; /* hasLayout ie7 trigger */ vertical-align: top; }
+	.navbar-inner						{ text-align:center; } 
+
+	nav 				{ margin: 0 !important; }
+	ul.nav 				{ font-family: 'Playfair Display', serif;   }
+	ul.nav li a			{ font-size: 18px; text-transform: uppercase !important; font-weight: normal !important; color: #fff; margin: 0 15px;  }
+	ul.nav li a:hover	{ border-bottom: 2px solid #cc3300; background-color: transparent !important; text-decoration: none;   }
+
+	.navbar-default .navbar-nav > li > a { color: #fff;  }
+
+	/* 3. CSS3 TRANSITIONS */
+
+	a  				{ transition: all 0.3s ease-out 0.1s;  }
+
+	/* 4. SIDEBAR */
+
+	.widgetSidebar 			{ margin: 0 0 40px 0;  }
+	.widgetSidebar ul 		{ list-style: none; margin: 0 !important; padding: 0 !important; }
+	.widgetSidebar li 		{ border-bottom: 1px solid #DADADA; box-shadow: 0 1px 0 #FFFFFF; padding: 10px 0; }
+	.btn 				 	{ -moz-appearance: caret; -moz-box-sizing: border-box; background: none repeat scroll 0 0 #006633; border: medium none; border-radius: 3px; box-shadow: 0 0 0 0 #888888; color: #FFFFFF !important; cursor: pointer; display: inline-block; font-family: inherit; font-size: 16px; font-weight: 300; line-height: 1.618em; overflow: visible; padding: 0.327em 1em; text-align: center; text-decoration: none; text-shadow: none; text-transform: uppercase; white-space: nowrap; width: auto; }
+	.btn:hover			 	{ background: none repeat scroll 0 0 #cc3300;}
+
+	#menu 					{ margin: 10px 0 40px 0; }
+	#menu p 				{ font-size: 15px; line-height:24px;}
+	#menu h1 				{ text-align: center;  }
+	#menu h2 				{ text-align: center; font-size: 24px; font-weight: 700; line-height:40px; text-transform:uppercase; letter-spacing: 4px; margin: 40px 0; }
+	#menu h2 				{ line-height: 0.5; text-align: center; } 
+	#menu h2 span 			{ display: inline-block; position: relative; } 
+	#menu h2 span:before, #menu h2 span:after { content: ""; position: absolute; height: 5px; border-bottom: 1px solid #eee; border-top: 1px solid #eee; top:5px; width:100%; }
+	#menu h2 span:before 	{ right: 100%; margin-right: 15px; }
+	#menu h2 span:after 	{ left: 100%; margin-left: 15px; }
+	#menu h3 				{ font-size:20px; font-weight: 700; line-height:20px; }
+	#piatto 				{ margin: 50px 0;}
+
+	.media-body 			{ padding-left: 40px;}
+	.media-object			{ padding: 2px; border: 1px solid #eee; }
+
+	.fb 					{ vertical-align:middle; height: 100%; text-transform: uppercase; font-size: 12px; color:#3A5896; }
+
+	/* GENERICA ----------- */
+
+	@media only screen and (min-width : 320px) and (max-width : 1024px) {
+
+	.container 	{ padding: 0 10px; }
+	.row 		{ margin: 0 !important; }
+	}
+
+	/* Smartphones (portrait and landscape) ----------- */
+	@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+	}
+
+	@media only screen and (min-width : 481px) and (max-width : 767px) {
+	
+	}
+
+	/* Smartphones (portrait) ----------- */
+	@media only screen and (max-width : 320px) {
+		
+		ul.nav li 			{ display: block; width: 100%; }
+		#footer 			{ text-align: center; }
+
+	}
+
+	/* iPads (portrait and landscape) ----------- */
+	@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+		ul.nav li 	{ display: inline-block; }
+		#footer 			{ text-align: center; }
+
+	}
+
+	/* iPads (portrait) ----------- */
+	@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+		.prodotto 	{ padding: 0 10px !important; }
+		ul.nav li 	{ display: inline-block; }
+	}
+
+	/* Desktops and laptops ----------- */
+	@media only screen and (min-width : 1024px) {
+
+		.prodotto 	{ padding: 0 10px !important; }
+		ul.nav li 	{ display: inline-block; }
+
+	}
