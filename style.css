@@ -11,46 +11,49 @@ Tags: Bootstrap
 	@import url("css/normalize.css");
 	@import url("css/bootstrap.css");
 	@import url("css/mpopup.css");
+	@import url(http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic);
 
-	/* 1. STRUTTURA */
+	/* ================= 1. STRUTTURA =================================== */
 
-	body		{ background-color: #eee;}
-	.container	{ margin:20px auto; padding: 0px; }
-	#page 		{ background-color: #fff;  box-shadow: 0px 1px 3px #ACACAC;  }
-	#header   	{ position: relative; padding: 40px 20px; background-color: #006633; border-bottom: 5px solid #cc3300; height: auto; }
+	body				{ background-color: #eee; background: url(img/bg-body.gif);}
+	.container			{ margin:20px auto; padding: 0px;  width: 1210px !important; }
+	#page 				{ background: url("img/bg-top.gif") no-repeat scroll center top #f4f3f0; box-shadow: 0px 1px 3px #ACACAC;  }
+	#header   			{ position: relative; padding: 40px 20px; height: auto; }
 
-	.logo 		{ display: block; } 
-	.logo a 	{ text-indent:-9999px; display: block; background-image: url(img/logo.gif); background-size:100% auto; width: 228px; height: 102px; }
-	.logo img 	{ max-width: 100%; height: auto !important; }
+	.logo 				{ display: block; } 
+	.logo a 				{ text-indent:-9999px; display: block; background-image: url(img/logo.gif); background-size:100% auto; width: 228px; height: 102px; }
+	.logo img 			{ max-width: 100%; height: auto !important; }
 
-	footer 		{ padding-top: 20px; background-color: #E2E2E2; border-top: 3px solid #cc3300;}
+	footer 				{ padding-top: 20px; }
 
-	/* 2. TIPOGRAFIA */
+	/* ================= 2. TIPOGRAFIA ================================== */
 
-	body							{  font-family: 'Merriweather', serif; font-weight: 400; font-size: 16px;  line-height: 28px; }
-	h1, h2, h3, h4, h5, h6, nav 	{  font-family: 'Playfair Display', serif; color: #cc3300; }
+	body				{  font-family: 'Lora', serif; font-weight: 400; font-size: 16px;  line-height: 28px; }
+	h1, h2, h3, h4, h5, h6, nav 	{  font-family: 'Lora', serif; color: #5D6E2B; }
+	h1 				{ }
+	h2 				{ }
+	h3 				{ font-size: 18px; line-height: 24px; }
+	h4 				{ }
+	h5 				{ }
 
+	p 				{ text-shadow:1px 1px 0px #fff; font-style: italic; }
+	a  				{ color: #5D6E2B; text-decoration: none; }
 
-	.entry p 						{ text-shadow:1px 1px 0px #fff;}
+	footer 				{ font-size: 12px !important; color: #0A0C19; line-height: 20px;  }
+	footer h2 			{ font-size: 16px !important; text-transform: uppercase;  }
 
 	.wcmenucart-display-right  	{ letter-spacing: 3px; font-size: 18px;   }
-
-	a  				{color: #cc3300; text-decoration: none; }
-
 	.widgetSidebar h2 		{ font-size: 22px; text-transform: uppercase; margin-bottom: 20px;}
-
-	footer 			{ font-size: 12px !important; color: #0A0C19; line-height: 20px;  }
-	footer h2 		{ font-size: 16px !important; text-transform: uppercase;  }
 
 	/* 2. NAVIGAZIONE */
 
 	.navbar .nav, .navbar .nav > li 	{ float:none; display:inline-block; *display:inline; /* ie7 fix */ *zoom:1; /* hasLayout ie7 trigger */ vertical-align: top; }
-	.navbar-inner						{ text-align:center; } 
+	.navbar-inner			{ text-align:center; } 
 
 	nav 				{ margin: 0 !important; }
 	ul.nav 				{ font-family: 'Playfair Display', serif;   }
 	ul.nav li a			{ font-size: 18px; text-transform: uppercase !important; font-weight: normal !important; color: #fff; margin: 0 15px;  }
-	ul.nav li a:hover	{ border-bottom: 2px solid #cc3300; background-color: transparent !important; text-decoration: none;   }
+	ul.nav li a:hover		{ border-bottom: 2px solid #cc3300; background-color: transparent !important; text-decoration: none;   }
 
 	.navbar-default .navbar-nav > li > a { color: #fff;  }
 
@@ -83,50 +86,3 @@ Tags: Bootstrap
 
 	.fb 					{ vertical-align:middle; height: 100%; text-transform: uppercase; font-size: 12px; color:#3A5896; }
 
-	/* GENERICA ----------- */
-
-	@media only screen and (min-width : 320px) and (max-width : 1024px) {
-
-	.container 	{ padding: 0 10px; }
-	.row 		{ margin: 0 !important; }
-	}
-
-	/* Smartphones (portrait and landscape) ----------- */
-	@media only screen and (min-width : 320px) and (max-width : 480px) {
-
-	}
-
-	@media only screen and (min-width : 481px) and (max-width : 767px) {
-	
-	}
-
-	/* Smartphones (portrait) ----------- */
-	@media only screen and (max-width : 320px) {
-		
-		ul.nav li 			{ display: block; width: 100%; }
-		#footer 			{ text-align: center; }
-
-	}
-
-	/* iPads (portrait and landscape) ----------- */
-	@media only screen and (min-width : 768px) and (max-width : 1024px) {
-
-		ul.nav li 	{ display: inline-block; }
-		#footer 			{ text-align: center; }
-
-	}
-
-	/* iPads (portrait) ----------- */
-	@media only screen and (min-width : 768px) and (max-width : 1024px) {
-
-		.prodotto 	{ padding: 0 10px !important; }
-		ul.nav li 	{ display: inline-block; }
-	}
-
-	/* Desktops and laptops ----------- */
-	@media only screen and (min-width : 1024px) {
-
-		.prodotto 	{ padding: 0 10px !important; }
-		ul.nav li 	{ display: inline-block; }
-
-	}
