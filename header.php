@@ -17,6 +17,7 @@
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700,900,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         
         <!-- CSS 
         ======================================================================================= -->
@@ -44,24 +45,35 @@
 
 <header id="header" class="col-lg-12 col-xs-12">
 
-	<div class="logo col-lg-4 col-md-4 col-sm-12 col-xs-12">
-		<a href="<?php echo get_option('home'); ?>"><?php bloginfo('name');?></a>
+	<div>
+            <a class=" logo" href="<?php echo get_option('home'); ?>"></a>
 	</div>
+    
+        <div>
+            <p class="motto"><?php bloginfo('description'); ?></p>
+	</div>
+        <div class="clear"></div>
+    
+        <!-- NAVIGATION -->
+        <div class="row">
+            <section id="navigation" class="twelve columns">
 
-	<nav class="navbar navbar-inner col-lg-8 col-md-8 col-sm-12 col-xs-12" role="navigation">
+                <nav id="nav-wrap">
 
-	<?php wp_nav_menu( array( 
+                <?php wp_nav_menu( array( 
 
-		'theme_location' 	=> 'primary-menu',
-		'menu'            		=> 'main',
-		'container'      		 => 'false', 
-		'menu_class'	  	=> 'navi',
-		'items_wrap' 		=> '<ul class="nav navbar-nav" >%3$s</ul>',
-		'before'          		=> '<span></span>'
+                        'theme_location' 	=> 'primary-menu',
+                        'menu'            	=> 'main',
+                        'container'      	=> 'false', 
+                        'menu_class'	=> 'navi',
+                        'items_wrap' 	=> '<ul id="topnav" class="sf-menu sf-js-enabled sf-shadow l_tinynav1" >%3$s</ul>',
+                        'before'          	=> '<span></span>'
 
- 	) ); ?>
-</nav>
+                ) ); ?>
+                </nav><!-- nav -->	
 
+            </section>  
+        </div>
 </header>
 
   <!-- Add the extra clearfix for only the required viewport -->
