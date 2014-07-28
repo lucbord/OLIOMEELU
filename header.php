@@ -17,8 +17,9 @@
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700,900,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
-    <!-- CSS 
-    ======================================================================================= -->
+        
+        <!-- CSS 
+        ======================================================================================= -->
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 
@@ -27,6 +28,10 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/scripts.js" ></script>
  
+        <!-- OWL-CAROUSEL 
+	 ======================================================================================= -->
+        
+        
 	<!-- WPHEAD 
 	======================================================================================= -->
 	<?php wp_head(); ?>
