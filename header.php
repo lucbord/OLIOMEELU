@@ -65,8 +65,8 @@
                         'theme_location' 	=> 'primary-menu',
                         'menu'            	=> 'main',
                         'container'      	=> 'false', 
-                        'menu_class'	=> 'navi',
-                        'items_wrap' 	=> '<ul id="topnav" class="sf-menu sf-js-enabled sf-shadow l_tinynav1" >%3$s</ul>',
+                        'menu_class'            => 'navi',
+                        'items_wrap'            => '<ul id="topnav" class="sf-menu" >%3$s</ul>',
                         'before'          	=> '<span></span>'
 
                 ) ); ?>
