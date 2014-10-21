@@ -18,7 +18,7 @@ Tags: Bootstrap
 	body				{ background-color: #f4f3f0; background: url(img/bg-body.gif);}
 	.container			{ margin: 20px auto; padding: 0px;  width: 1210px !important;}
 	#page 				{ background: no-repeat scroll center top #F3F2EE; box-shadow: 0px 1px 3px #ACACAC; }
-	#header   			{ position: relative; height: auto; background-image: url('img/fronde.jpg'); background-position: center top; background-repeat: no-repeat; padding-top: 15px; padding-bottom: 30px;}
+	#header   			{ position: relative; height: auto; background-image: url('img/fronde.jpg'); background-position: center top; background-repeat: no-repeat; padding-top: 15px; padding-bottom: 80px;}
         .post                           { margin-left: 25px; margin-right: 25px;}
         a.logo                          { background-image: url('img/logo.png'); height: 59px; width: 497px; display: block; margin-left: auto; margin-right: auto; background-repeat: no-repeat; background-position: center center; }
 
@@ -129,3 +129,44 @@ margin-top: 10px;
         .txt-center                     { text-align: center;font-family: 'Lora', serif;font-size: 16px;color: #000000; line-height: 26px; margin-bottom: 25px; display: block;}
         .txt-bk                         { background-image: url('img/top_line.jpg'); background-position: center top; background-repeat: no-repeat; padding-top: 35px; font-style: italic; line-height: 24px; margin-bottom: 25px; display: block;}
         .box-title-prod                 { background-image: url('img/linea.jpg'); background-repeat: repeat-x; background-position: center center; text-align: center; margin-bottom: 30px; }
+        
+        /* 7. PRODOTTI */
+        .title-prodotti {
+                            position: absolute;
+                            margin-top: -55px;
+                            width: 1160px;
+                            text-align: center;
+                            font-family: 'Lora', serif;
+                            color: #5E3927;
+                            font-size: 28px;
+                            font-weight: bold;
+                            letter-spacing: 3px;
+                           
+                            display: block;
+                            border-bottom: 1px solid rgba(0, 0, 0, .1);
+                            border-width: 1px 0;
+                        
+                            padding-bottom: 24px;
+}
+                        .title-prodotti:before {
+                        border-bottom: 1px solid rgba(0, 0, 0, .1);
+                        border-width: 1px 0;
+                         content: "";
+                        display: block;
+                        position: relative;
+                        z-index: 1;
+                        -webkit-background-clip: padding-box;
+                        background-clip: padding-box;
+                        top: 51px;
+}
+.post-prodotti{
+    margin-top: 35px;
+    font-family: Lora, serif;
+    font-size: 16px;
+    margin-bottom: 35px;
+    letter-spacing: 1px;
+}
+.content-prodotti{
+    margin-left: 40px;
+    margin-right: 40px;
+}
