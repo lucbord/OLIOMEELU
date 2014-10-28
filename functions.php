@@ -10,10 +10,10 @@
             add_theme_support   ( 'post-thumbnails' );
 
             set_post_thumbnail_size( 374, 280);
-            add_image_size( 'shop', 200, 9999 );
-            add_image_size( 'food', 200, 200 );
-                            
+            add_image_size( 'prodotti', 300, 9999 );
+            add_image_size( 'home', 374, 9999 );                
 
+            
 	if (function_exists('register_sidebar')) {
 
 		register_sidebar(array(

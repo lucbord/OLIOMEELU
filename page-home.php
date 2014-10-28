@@ -27,17 +27,18 @@
             <div class="col-lg-12">
             <div class="box-title-prod">
                <h2>I PRODOTTI DEL FRANTOIO PANIZZI</h2>	
-            </div>               
+            </div>  
+            <div class="box-thumb-home">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <div class="col-lg-4 col-md-4 col-xs-4 thumb ">
                         <div class="thumbnails" id="post-<?php the_ID(); ?>">
                             <a class="thumbnail" href="<?php the_permalink() ?>">  
-                                <?php the_post_thumbnail('post-thumbnails', array('class' => 'img-home')); ?>
+                                <?php the_post_thumbnail('home', array('class' => 'thumb-home')); ?>
                             </a>
 
                         </div>
                     </div>
                 <?php endwhile; endif; ?>
-
+            </div>
             </div>
 <?php get_footer(); ?>

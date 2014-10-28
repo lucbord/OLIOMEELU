@@ -2,6 +2,9 @@
 	Template Name: 02. Prodotti
 */ ?>
 
+<style>
+    #header {padding-bottom: 80px !important; }
+</style>
  <?php get_header(); ?>
 <div class="content-prodotti">
     <h2 class="title-prodotti"><?php the_title(); ?></h2>
@@ -31,12 +34,12 @@
             <?php if ( $loop ) : 
 
                 while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">  
+                    <div class="col-lg-4 col-md-4 col-xs-6 thumb">  
                         <div class="thumbnails" id="post-<?php the_ID(); ?>">
                             <a class="thumbnail" href="<?php the_permalink() ?>">
-                                <div class="thumb-brand">
-                                    <?php the_post_thumbnail("shop"); ?>
-                                    <div class="title-brand">
+                                <div class="thumb">
+                                    <?php the_post_thumbnail('home', array('class' => 'thumb-prodotti')); ?>
+                                    <div class="tit-prodotto">
                                         <?php the_title(); ?>
                                     </div>
                                 </div>     

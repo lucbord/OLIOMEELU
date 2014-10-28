@@ -18,7 +18,7 @@ Tags: Bootstrap
 	body				{ background-color: #f4f3f0; background: url(img/bg-body.gif);}
 	.container			{ margin: 20px auto; padding: 0px;  width: 1210px !important;}
 	#page 				{ background: no-repeat scroll center top #F3F2EE; box-shadow: 0px 1px 3px #ACACAC; }
-	#header   			{ position: relative; height: auto; background-image: url('img/fronde.jpg'); background-position: center top; background-repeat: no-repeat; padding-top: 15px; padding-bottom: 80px;}
+	#header   			{ position: relative; height: auto; background-image: url('img/fronde.jpg'); background-position: center top; background-repeat: no-repeat; padding-top: 15px; padding-bottom: 30px;}
         .post                           { margin-left: 25px; margin-right: 25px;}
         a.logo                          { background-image: url('img/logo.png'); height: 59px; width: 497px; display: block; margin-left: auto; margin-right: auto; background-repeat: no-repeat; background-position: center center; }
 
@@ -124,12 +124,13 @@ margin-top: 10px;
         /* 6. HOMEPAGE */
         .motto                          { text-align: center;  margin-top: 15px;  margin-bottom: 15px;  text-transform: uppercase;  font-family: 'Lora', serif;  font-style: normal;  font-size: 20px;  color: #313A24;  font-weight: normal;  font-stretch: 27px;  letter-spacing: 3px;}
         .grid-prodotti                  { margin-left:30px; margin-right: 30px; display: block;}
-        #new-royalslider-1              { margin-left: auto; margin-right: auto;background-color: #fff;margin-bottom: 30px;}
+        #new-royalslider-1              { -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.6);-moz-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.6); box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.6);margin-left: auto; margin-right: auto;background-color: #fff;margin-bottom: 30px;}
         .rsDefaultInv .rsTmb            { display:none !important;}
         .txt-center                     { text-align: center;font-family: 'Lora', serif;font-size: 16px;color: #000000; line-height: 26px; margin-bottom: 25px; display: block;}
         .txt-bk                         { background-image: url('img/top_line.jpg'); background-position: center top; background-repeat: no-repeat; padding-top: 35px; font-style: italic; line-height: 24px; margin-bottom: 25px; display: block;}
         .box-title-prod                 { background-image: url('img/linea.jpg'); background-repeat: repeat-x; background-position: center center; text-align: center; margin-bottom: 30px; }
-        
+        .thumb-home                     { }
+        .box-thumb-home                 { margin-left: 10px; margin-right: 20px; display: block;}
         /* 7. PRODOTTI */
         .title-prodotti {
                             position: absolute;
@@ -169,4 +170,16 @@ margin-top: 10px;
 .content-prodotti{
     margin-left: 40px;
     margin-right: 40px;
+}
+.tit-prodotto{
+    font-family: lora, serif;
+    font-size: 22px;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.thumb-prodotti{
+    margin-left: -10px;
 }
