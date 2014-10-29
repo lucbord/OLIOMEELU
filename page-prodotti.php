@@ -8,7 +8,7 @@
  <?php get_header(); ?>
 <div class="content-prodotti">
     <h2 class="title-prodotti"><?php the_title(); ?></h2>
-    
+    <div class="content-prod">
     <div class="col-lg-12 ">
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -38,7 +38,7 @@
                         <div class="thumbnails" id="post-<?php the_ID(); ?>">
                             <a class="thumbnail" href="<?php the_permalink() ?>">
                                 <div class="thumb">
-                                    <?php the_post_thumbnail('home', array('class' => 'thumb-prodotti')); ?>
+                                    <?php the_post_thumbnail('prodotti', array('class' => 'thumb-prodotti')); ?>
                                     <div class="tit-prodotto">
                                         <?php the_title(); ?>
                                     </div>
@@ -47,6 +47,6 @@
                         </div>
                     </div>
 		<?php endwhile; endif; ?>
-
+    </div>
 </div>	
 <?php get_footer(); ?>
