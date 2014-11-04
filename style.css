@@ -10,7 +10,6 @@ Tags: Bootstrap
 	
 	@import url("css/normalize.css");
 	@import url("css/bootstrap.css");
-	@import url("css/mpopup.css");
 	@import url(http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic);
 
 	/* ================= 1. STRUTTURA =================================== */
@@ -215,3 +214,7 @@ margin-top: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+/* 9. Contatti */
+
+.gm-style{border: 7px solid #fff !important}
